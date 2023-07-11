@@ -1,4 +1,14 @@
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
+
+div {  
+    width: 300px;  
+    height: auto;    
+    padding: 15px;  
+}  
+
+img {  
+    object-fit: cover;  
+}  
