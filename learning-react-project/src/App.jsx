@@ -1,17 +1,18 @@
-import React from "react"
-import ReactDOM from "react-dom"
 import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer"
+import './App.css'
 
-function Page() {
-    return (
+function App() {
+  return (
+    <>
         <div>
             <Header/>
             <MainContent/>
             <Footer/>
         </div>
-    )
+    </>
+  )
 }
 
-ReactDOM.render(<Page/>, document.getElementById("root"))
+export default App
