@@ -1,10 +1,32 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-function Page() {
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>    
+            <small>© 2023 Ianwyt. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <img src="./react-logo.png" width = "50" height = "50"/>
             <h1>My awesome website in React</h1>
             <h3>Reasons I love React</h3>
             <ol>
@@ -13,6 +35,16 @@ function Page() {
                 <li>It's a hireable skill</li>
                 <li>It's actively maintained by skilled people</li>
             </ol>
+        </div>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header/>
+            <MainContent/>
+            <Footer/>
         </div>
     )
 }
